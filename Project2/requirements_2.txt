@@ -1,0 +1,4 @@
+boto3
+facenet-pytorch
+opencv-python-headless
+pillow
