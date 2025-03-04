@@ -26,7 +26,7 @@ This project demonstrates how **cloud computing services** can be leveraged to b
 In this part, a **multi-tier cloud application** is implemented using AWS **EC2, SQS, and S3**. The system scales dynamically to handle increasing workloads by auto-scaling EC2 instances based on demand.
 
 ### Architecture
-
+![Project 1 Architecture](Images/Screenshot%202025-03-03%20195538.png)
 1. **Web Tier (EC2 Instance)**
    - Receives image files via HTTP POST requests.
    - Sends images to the **App Tier** using **AWS SQS (Request Queue)**.
@@ -56,7 +56,7 @@ In this part, a **multi-tier cloud application** is implemented using AWS **EC2,
 This part transitions the face recognition pipeline into a **serverless architecture** using **AWS Lambda**. Instead of manually managing EC2 instances, **AWS Lambda** automatically executes functions in response to video uploads.
 
 ### Architecture
-
+![Project 2 Architecture](Images/Screenshot%202025-03-03%20195559.png)
 1. **AWS Lambda Function**
    - Triggered when a **video file** is uploaded to S3.
    - Uses **ffmpeg** to split videos into **frames (Group of Pictures - GoP)**.
